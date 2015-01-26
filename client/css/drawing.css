@@ -1,0 +1,124 @@
+html, body, input {
+    font-family: 'Ubuntu', sans-serif;
+}
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: transparent url(../img/bg.jpg) repeat;
+}
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin: 5px 10px;
+    color: #8698ae;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+}
+.container {
+    width: 952px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    overflow: hidden;
+    padding: 4px;
+}
+b, strong {
+    font-weight: 700;
+}
+
+.column-left {
+    float: left;
+    width: 350px;
+}
+.column-right {
+    float: left;
+}
+
+.users, .guesses, .guess, .round-information {
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 560px;
+    margin-right: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.users {
+    width: 148px;
+}
+
+.users li {
+    padding: 3px 2px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.users li .score {
+    float: right;
+    color: #888;
+}
+
+.guesses {
+    width: 190px;
+    overflow-y: scroll;
+    font-size: 14px;
+}
+
+.guesses li {
+    padding: 3px 3px 5px;
+}
+
+.guesses .username {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #888;
+}
+
+.guess {
+    margin-top: 4px;
+    background-color: white;
+    height: auto;
+}
+.guess input {
+    border: none;
+    font-size: 16px;
+    line-height: 32px;
+    height: 32px;
+    text-indent: 4px;
+    width: 344px;
+}
+
+.drawing-container {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 560px;
+    float: left;
+}
+#drawing {
+    position: relative;
+    cursor: crosshair;
+}
+.round-information {
+    margin: 4px 0 0;
+    clear: left;
+    background-color: rgba(255,255,0,0.2);
+    height: 34px;
+    width: 600px;
+}
+.round-information .waiting-for-players,
+.round-information .guess-countdown {
+    padding: 7px 6px 6px;
+    color: #444;
+}
+.round-information .guess-countdown .countdown {
+    float: right;
+}
+.round-information .round-finished {
+    padding: 0 6px;
+}
